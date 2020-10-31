@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<!--PROJECT: MyShuttle
+		Author: Erik Ulmer, Andy Zhu, Jason Reilly, Rickey Patel
+		IST 412 - Penn State Abington - FA2020
+		Due: 10/31/2020
+	-->
+
+	<title>MyShuttle</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="msapplication-TileColor" content="#00aba9">
+	<meta name="theme-color" content="#4cc3d7">
+	
+	<!--Adding a Tab/Main Plane Icon (.ico) for Apple devices & other; must have these files in root directory-->
+	<link rel="" type="" href=""/>
+	<link rel="" sizes="" href="">
+	<link rel="" type="" sizes="" href="">
+	<link rel="" type="" sizes="" href="">
+	<link rel="" type="" sizes="" href="">
+	<link rel="" type="" sizes="" href="">
+	<link rel="" type="" sizes="" href="">
+	
+	<!--Menu Nav Bar & SITE STYLE CSS-->
+	<link href="HomeNavBar.css" rel="stylesheet" type="text/css"/>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="HomeStyle.css" rel="stylesheet" type="text/css"/>
+	
+	<!--HomeNavBar JS | Dropdown Menu Bar for smaller screens-->
+	<script type="text/javascript" src="HomeNavBar.js"></script>
+		
+	</head>
+
+<header>
+		<a href="index.html"><strong><h1> &nbsp;MyShuttle</h1></strong></a>
+	
+	<!--WHEN SCREEN RESIZE, topnav adapts for cleaner look-->
+		<nav class="topnav" id="myTopNav">
+		<nav>
+			<!--LoopHome-->
+			<a href="index.html" title="Back To Home" class="active"><i class="fa fa-home" style="font-size:16px"></i> Home</a>
+			
+			<nav class="dropdown">
+				<button class="dropbtn">Upload
+				&#9660;
+				</button>
+				<nav class="dropdown-content">
+					<form action="/action_page.php">
+						<label for="myfile">Select files:</label>
+						<input type="file" id="myfile" name="myfile" multiple><br><br>
+						<input type="submit">
+					</form>
+				</nav>
+			</nav>
+			
+			
+			<!--Empty, so this doesn't cause error-->
+			<nav class="dropdown">
+				<button class="dropbtn">Fare History
+				
+				</button>
+				<nav class="dropdown-content">
+				
+				</nav>
+			</nav>	
+				
+				
+			<nav class="dropdown">
+				<button class="dropbtn">Contact
+				&#9660;
+				</button>
+				<nav class="dropdown-content">
+					<a href="mailto:epu5009@psu.edu?subject=Comments%20Message"><i class="fa fa-envelope" style="font-size:15px"></i> | E-Mail Support</a>
+					<a href="tel:8145550158"><i class="fa fa-phone" style="font-size:19px"></i> |&nbsp;&nbsp; Call Support</a>
+				</nav>
+			</nav>	
+			
+			
+			<nav class="dropdown">
+				<button class="dropbtn">Help
+				&#9660;
+				</button>
+				<nav class="dropdown-content">
+					<a href="INFO_TRAINING.html"><center>Info / Training</center></a>
+					<a href="FAQs.html"><center>FAQs</center></a>
+	
+				</nav>
+			</nav>	
+			
+			<!--JS function call for hamburger icon menu-->
+			<a href="javascript:void(0);" class="icon" onclick="navBarFunction()">&#9776;</a>
+
+		</nav>
+</header>
+
+
+<body>	
+
+<br></br>
+<br></br>
+<br></br>
+
+<br></br>
+<br></br>
+<br></br>
+
+<!--MUST KEEP THESE BREAKS OR FOOTER OVERLAPS.. ONLY ON HOMEPAGE-->
+
+
+<br></br>
+<br></br>
+<br></br>
+
+<footer>
+	<center>
+		While using this site, you agree to have read and accepted our terms of use, cookie and privacy policy.
+		<hr color="#333">
+		Unauthorized use is prohibited. © 2020 Erik Ulmer, Andy Zhu, Jason Reilly, Rickey Patel. All Rights Reserved.
+		<hr color="#333">
+		Powered by HTML | CSS 
+	</center>
+</footer>
+</html> 
