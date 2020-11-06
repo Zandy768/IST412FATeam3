@@ -28,6 +28,7 @@
 	<link href="HomeNavBar.css" rel="stylesheet" type="text/css"/>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href="HomeStyle.css" rel="stylesheet" type="text/css"/>
+	<link href="Form.css" rel="stylesheet" type="text/css"/>
 	
 	<!--HomeNavBar JS | Dropdown Menu Bar for smaller screens-->
 	<script type="text/javascript" src="HomeNavBar.js"></script>
@@ -44,17 +45,35 @@
 			<a href="index.html" title="Back To Home" class="active"><i class="fa fa-home" style="font-size:16px"></i> Home</a>
 			
 			<nav class="dropdown">
-				<button class="dropbtn">Upload
-				&#9660;
-				</button>
-				<nav class="dropdown-content">
-					<form action="/action_page.php">
-						<label for="myfile">Select files:</label>
-						<input type="file" id="myfile" name="myfile" multiple><br><br>
-						<input type="submit">
+				<!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup_form-->
+				<button class="dropbtn" onclick="openForm()">Login/Signup &#9660; </button>
+
+				<nav class="form-popup" id="myForm">
+					<form action="/action_page.php" class="form-container">
+						<h1>Login</h1>
+
+						<label for="email"><b>Email</b></label>
+						<input type="text" placeholder="Enter Email" name="email" required>
+
+						<label for="psw"><b>Password</b></label>
+						<input type=password placeholder="Enter Password" name="psw" required>
+						
+						<button type="submit" class="btn">Login</button>
+						<button type="button" class="btn">Sign Up</button>
+						<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
 					</form>
 				</nav>
 			</nav>
+			
+			<script>
+				function openForm() {
+					document.getElementById("myForm").style.display="block";
+				}
+
+				function closeForm() {
+					document.getElementById("myForm").style.display="none";
+				}
+			</script>
 			
 			
 			<!--Empty, so this doesn't cause error-->
