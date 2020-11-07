@@ -26,7 +26,6 @@
 	<link href="HomeNavBar.css" rel="stylesheet" type="text/css"/>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href="HomeStyle.css" rel="stylesheet" type="text/css"/>
-	<link href="Form.css" rel="stylesheet" type="text/css"/>
 	
 	<!--HomeNavBar JS | Dropdown Menu Bar for smaller screens-->
 	<script type="text/javascript" src="HomeNavBar.js"></script>
@@ -44,47 +43,11 @@
 
 			<a href="requestShuttle.html"><i style="font-size:16px"></i> Request Shuttle</a>
 			
-<<<<<<< HEAD
-			<nav class="dropdown">
-				<!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup_form-->
-				<button class="dropbtn" onclick="openForm()">Login/Signup &#9660; </button>
-
-				<nav class="form-popup" id="myForm">
-					<form action="/action_page.php" class="form-container">
-						<h1>Login</h1>
-
-						<label for="email"><b>Email</b></label>
-						<input type="text" placeholder="Enter Email" name="email" required>
-
-						<label for="psw"><b>Password</b></label>
-						<input type=password placeholder="Enter Password" name="psw" required>
-						
-						<button type="submit" class="btn">Login</button>
-						<button type="button" class="btn">Sign Up</button>
-						<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-					</form>
-				</nav>
-			</nav>
-			
-			<script>
-				function openForm() {
-					document.getElementById("myForm").style.display="block";
-				}
-
-				function closeForm() {
-					document.getElementById("myForm").style.display="none";
-				}
-			</script>
-			
-			
-			<!--Empty, so this doesn't cause error-->
-=======
 		
 			<!--Fare History Empty At the moment-->
->>>>>>> 3ba195d2f5bbe11d43af091be3a3eed4152c586a
 			<nav class="dropdown">
 				<button class="dropbtn">Fare History
-
+				
 				</button>
 				<nav class="dropdown-content">
 					<!--insert href for dropdown for Rider, & Driver Pages-->
@@ -109,8 +72,9 @@
 				&#9660;
 				</button>
 				<nav class="dropdown-content">
-					<a href="INFO_TRAINING.html">Info / Training</a>
-					<a href="FAQs.html">FAQs</a>
+					<a href="INFO_TRAINING.html"><center>Info / Training</center></a>
+					<a href="FAQs.html"><center>FAQs</center></a>
+	
 				</nav>
 			</nav>	
 			
@@ -120,26 +84,103 @@
 
 		</nav>
 
-<!--___________________________________________Menu Bar Code Ends Here__________________________________________________________________________-->
+<!--___________________________________________Menu Bar Code Ends Here__________________________________________________________________________-->>
 </header>
 
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid skyblue;
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+</style>
+</head>
 
+<body>
+    <h2>MyShuttle</h2>
 
-<body>	
-	<br></br>
+    <table style="width:100%">
+        <tr>
+          <th>Trip#</th>
+          <th>Start</th>
+          <th>End</th> 
+          <th>Total</th>
+		  <th>Duration</th>
+		  <th>Round-Trip</th>
+		  <th>Round-Trip(Total)</th>
+        </tr>
+        <tr>
+          <td>1)</td>
+          <td>MyCampus</td>
+          <td>Wawa</td>
+          <td>$5</td>
+		  <td>4 minutes</td>
+		  <td>10 minutes</td>
+		  <td>$11</td>
+        </tr>
+        <tr>
+          <td>2)</td>
+          <td>MyCampus</td>
+          <td>Abington Hospital</td>
+          <td>$3</td>
+		  <td>2 minutes</td>
+		  <td>4 minutes</td>
+		  <td>$7</td>
+        </tr>
+        <tr>
+          <td>3)</td>
+          <td>MyCampus</td>
+          <td>Whole Foods</td>
+          <td>$10</td>
+		  <td>7 minutes</td>
+		  <td>14 minutes</td>
+		  <td>$16</td>
+		</tr>
+		<tr>
+			<td>4)</td>
+			<td>MyCampus</td>
+			<td>Kung Fu Tea</td>
+			<td>$2</td>
+			<td>3 minutes</td>
+			<td>6 minutes</td>
+			<td>$5</td>
+			
+		  </tr>
+		  <tr>
+			<td>5) **SPECIAL** </td>
+			<td>MyCampus</td>
+			<td>Dorms</td>
+			<td>$1</td>
+			<td>3 minutes</td>
+			<td>7 minutes</td>
+			<td>$1</td>
+		  </tr>
+		  <tr>
+			<td>6) **SPECIAL** </td>
+			<td>MyCampus</td>
+			<td>Abington Library</td>
+			<td>$1</td>
+			<td>3 minutes</td>
+			<td>7 minutes</td>
+			<td>$1</td>
+		</tr>
+      </table>
 	
-	<!--Google Map-->
-	<center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3051.2125547998226!2d-75.112814584752!3d40.11526637940125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b055aa880c67%3A0xdddc30c9cdaf01d7!2sPenn%20
-	State%20Abington!5e0!3m2!1sen!2sus!4v1604702523459!5m2!1sen!2sus" width="95%" height="500px" style="position: relative; border-color: black; border-width: 10%;"></iframe></center>
-
+	
 
 	<!--MUST KEEP THESE BREAKS OR FOOTER OVERLAPS.. ONLY ON HOMEPAGE-->
 	
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
 </body>
 
 
