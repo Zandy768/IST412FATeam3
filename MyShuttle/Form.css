@@ -14,8 +14,8 @@
 
 /* The popup form - hidden by default */
 .form-popup {
-    text-align: center;
-    display: none;
+  text-align: center;
+  display: none;
   position: fixed;
   bottom: 0;
   right: 15px;
@@ -30,12 +30,12 @@
   background-color: white;
 }
 
-/* Full-width input fields */
+/* input fields */
 .form-container input[type=text], .form-container input[type=password] {
-  width: 100%;
+  max-width: 250px;
   padding: 15px;
   margin: 5px 0 22px 0;
-  border: none;
+  border-color: black;
   background: #f1f1f1;
 }
 
@@ -54,7 +54,6 @@
   cursor: pointer;
   width: 100%;
   margin-bottom:10px;
-  opacity: 0.8;
 }
 
 /* Add a red background color to the cancel button */
@@ -64,5 +63,6 @@
 
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
-  opacity: 1;
+  color: black;
+  opacity: 0.8;
 }
