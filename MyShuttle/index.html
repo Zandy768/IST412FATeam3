@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<?php
+
 <head>
 	<!--PROJECT: MyShuttle
 		Author: Erik Ulmer, Andy Zhu, Jason Reilly, Rickey Patel
@@ -90,7 +92,7 @@
 				</nav>
 			</nav>	
 
-			<!--Login Page-->
+<!--____________________________________________________________________Login Page______________________________________________________________________________________________-->
 			<nav class="dropdown">
 				<!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup_form-->
 				<button class="dropbtn" onclick="openForm(); openNav()">Login/Signup </button>
@@ -98,14 +100,14 @@
 				<nav class="form-popup" id="myForm">
 					<div id="myNav" class="overlay">
 						<div class="overlay-content">
-							<form action="/action_page.php" class="form-container">
+							<form action="/login.php" class="form-container">
 								<h2 style="color:black; "><b>Welcome!</b></h2>
 
 								<label for="email"><b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email</b></label>
-								<input type="text" placeholder="Enter Email" name="email" required>
+								<input type="text" placeholder="Enter Email" name="email" required id="email">
 
 								<label for="psw"><b>Password</b></label>
-								<input type=password placeholder="Enter Password" name="psw" required>
+								<input type="password" placeholder="Enter Password" name="psw" required id="pass">
 								
 								<button type="submit" class="btn">Login</button>
 								<button type="button" class="btn">Sign Up</button>
@@ -130,7 +132,7 @@
 			<a href="javascript:void(0);" class="icon" onclick="navBarFunction()">&#9776;</a>
 
 		</nav>
-<!--___________________________________________Menu Bar Code Ends Here__________________________________________________________________________-->
+<!--___________________________________________Menu Bar Code Ends Here_________________________________________________________________________________________________________-->
 </header>
 
 
