@@ -81,13 +81,11 @@
 
 .overlay-content {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 25%;
+  left: 42%;
   width: 50%;
   height: 50%;
   text-align: center;
-  margin-top: 25px;
-  margin-left: -50px;
 }
 
 .overlay a {
