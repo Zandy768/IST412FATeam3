@@ -90,29 +90,41 @@
 				</nav>
 			</nav>	
 
-
+			<!--Login Page-->
 			<nav class="dropdown">
 				<!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup_form-->
-				<button class="dropbtn" onclick="openForm()">Login/Signup </button>
+				<button class="dropbtn" onclick="openForm(); openNav()">Login/Signup </button>
 
 				<nav class="form-popup" id="myForm">
-					<form action="/action_page.php" class="form-container">
-						<h2 style="color:black; "><b>Welcome!</b></h2>
+					<div id="myNav" class="overlay">
+						<div class="overlay-content">
+							<form action="/action_page.php" class="form-container">
+								<h2 style="color:black; "><b>Welcome!</b></h2>
 
-						<label for="email"><b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email</b></label>
-						<input type="text" placeholder="Enter Email" name="email" required>
+								<label for="email"><b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email</b></label>
+								<input type="text" placeholder="Enter Email" name="email" required>
 
-						<label for="psw"><b>Password</b></label>
-						<input type=password placeholder="Enter Password" name="psw" required>
-						
-						<button type="submit" class="btn">Login</button>
-						<button type="button" class="btn">Sign Up</button>
-						<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-					</form>
+								<label for="psw"><b>Password</b></label>
+								<input type=password placeholder="Enter Password" name="psw" required>
+								
+								<button type="submit" class="btn">Login</button>
+								<button type="button" class="btn">Sign Up</button>
+								<button type="button" class="btn cancel" onclick="closeForm(); closeNav()">Close</button>
+							</form>
+						</div>
+					</div>	
 				</nav>
 			</nav>
 			
+			<script>
+				function openNav() {
+					document.getElementById("myNav").style.display = "block";
+				}
 
+				function closeNav() {
+					document.getElementById("myNav").style.display = "none";
+				}
+			</script>
 
 			<!--JS function call for hamburger icon menu-->
 			<a href="javascript:void(0);" class="icon" onclick="navBarFunction()">&#9776;</a>
