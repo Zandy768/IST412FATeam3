@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php
-
 <head>
 	<!--PROJECT: MyShuttle
 		Author: Erik Ulmer, Andy Zhu, Jason Reilly, Rickey Patel
@@ -57,18 +55,11 @@
 			<a href="index.html" title="Back To Home" class="active"><i class="fa fa-home" style="font-size:16px"></i> Home</a>
 
 			<a href="requestShuttle.html"><i style="font-size:16px"></i> Request Shuttle</a>
+
+			<a href="fare_history.html"><i style="font-size:16px"></i> Fare History</a>
+
 			
 
-			<!--Empty at the moment-->
-			<nav class="dropdown">
-				<button class="dropbtn">Fare History
-
-				</button>
-				<nav class="dropdown-content">
-					<!--insert href for dropdown for Rider, & Driver Pages-->
-				
-				</nav>
-			</nav>	
 				
 				
 			<nav class="dropdown">
@@ -92,7 +83,7 @@
 				</nav>
 			</nav>	
 
-<!--____________________________________________________________________Login Page______________________________________________________________________________________________-->
+			<!--Login Page-->
 			<nav class="dropdown">
 				<!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup_form-->
 				<button class="dropbtn" onclick="openForm(); openNav()">Login/Signup </button>
@@ -100,14 +91,14 @@
 				<nav class="form-popup" id="myForm">
 					<div id="myNav" class="overlay">
 						<div class="overlay-content">
-							<form action="/login.php" class="form-container">
+							<form action="/action_page.php" class="form-container">
 								<h2 style="color:black; "><b>Welcome!</b></h2>
 
 								<label for="email"><b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email</b></label>
-								<input type="text" placeholder="Enter Email" name="email" required id="email">
+								<input type="text" placeholder="Enter Email" name="email" required>
 
 								<label for="psw"><b>Password</b></label>
-								<input type="password" placeholder="Enter Password" name="psw" required id="pass">
+								<input type=password placeholder="Enter Password" name="psw" required>
 								
 								<button type="submit" class="btn">Login</button>
 								<button type="button" class="btn">Sign Up</button>
@@ -132,7 +123,7 @@
 			<a href="javascript:void(0);" class="icon" onclick="navBarFunction()">&#9776;</a>
 
 		</nav>
-<!--___________________________________________Menu Bar Code Ends Here_________________________________________________________________________________________________________-->
+<!--___________________________________________Menu Bar Code Ends Here__________________________________________________________________________-->
 </header>
 
 
