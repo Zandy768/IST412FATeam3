@@ -26,10 +26,21 @@
 	<link href="HomeNavBar.css" rel="stylesheet" type="text/css"/>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href="HomeStyle.css" rel="stylesheet" type="text/css"/>
+	<link href="Form.css" rel="stylesheet" type="text/css"/>
 	
 	<!--HomeNavBar JS | Dropdown Menu Bar for smaller screens-->
 	<script type="text/javascript" src="HomeNavBar.js"></script>
 		
+	<!--Login Fourm JS | From Nav Bar-->
+	<script>
+		function openForm() {
+			document.getElementById("myForm").style.display="block";
+		}
+
+		function closeForm() {
+			document.getElementById("myForm").style.display="none";
+		}
+	</script>
 </head>
 
 
@@ -58,7 +69,6 @@
 				</nav>
 			</nav>	
 			
-			
 			<nav class="dropdown">
 				<button class="dropbtn">Help
 				&#9660;
@@ -70,6 +80,43 @@
 				</nav>
 			</nav>	
 			
+
+			<!--Login Page-->
+			<nav class="dropdown">
+				<!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup_form-->
+				<button class="dropbtn" onclick="openForm(); openNav()">Login/Signup </button>
+
+				<nav class="form-popup" id="myForm">
+					<div id="myNav" class="overlay">
+						<div class="overlay-content">
+							<form action="login.php" method="POST" class="form-container">
+								<h2 style="color:black"><b>Welcome!</b></h2>
+
+								<label for="email"><b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email</b></label>
+								<input type="text" placeholder="Enter Email" id="username" name="email" required>
+
+								<label for="psw"><b>Password</b></label>
+								<input type="password" placeholder="Enter Password" id="password" name="password" required>
+								
+								<input type="submit" class="btn" name="Login" value="Login"></input>
+								<input type="button" class="btn" name="Signup" value="Sign Up"></input>
+								<button type="button" class="btn cancel" onclick="closeForm(); closeNav()">Close</button>
+							</form>
+						</div>
+					</div>	
+				</nav>
+			</nav>
+			
+			<script>
+				function openNav() {
+					document.getElementById("myNav").style.display = "block";
+				}
+
+				function closeNav() {
+					document.getElementById("myNav").style.display = "none";
+				}
+			</script>
+
 
 <!--___________________________________________Menu Bar Code Ends Here__________________________________________________________________________-->
 </header>
