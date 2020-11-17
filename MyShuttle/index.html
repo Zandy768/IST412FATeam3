@@ -100,17 +100,17 @@
 				<nav class="form-popup" id="myForm">
 					<div id="myNav" class="overlay">
 						<div class="overlay-content">
-							<form action="/login.php" class="form-container">
+							<form action="login.php" method="post" class="form-container">
 								<h2 style="color:black; "><b>Welcome!</b></h2>
 
 								<label for="email"><b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email</b></label>
-								<input type="text" placeholder="Enter Email" name="email" required id="email">
+								<input type="text" placeholder="Enter Email" id="username" name="email" required>
 
 								<label for="psw"><b>Password</b></label>
-								<input type="password" placeholder="Enter Password" name="psw" required id="pass">
+								<input type="password" placeholder="Enter Password" id="password" name="password" required>
 								
-								<button type="submit" class="btn">Login</button>
-								<button type="button" class="btn">Sign Up</button>
+								<input type="submit" class="btn" name="Login" value="Login"></input>
+								<input type="button" class="btn" name="Signup" value="Sign Up"></input>
 								<button type="button" class="btn cancel" onclick="closeForm(); closeNav()">Close</button>
 							</form>
 						</div>

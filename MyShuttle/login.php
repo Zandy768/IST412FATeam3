@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+
+
 <html>
     <head>
         <title>Login</title>
@@ -17,3 +20,5 @@
             fclose($fh);
         }
         ?>
+    </body>
+</html>
