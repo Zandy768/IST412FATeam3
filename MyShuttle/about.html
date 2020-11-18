@@ -1,51 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<!--DO NOT EDIT_____________________DO NOT EDIT____________________________________DO NOT EDIT_________________DO NOT PUT MAP INFO___________________________________________-->
+<html>
+	<head>
 	<!--PROJECT: MyShuttle
 		Author: Erik Ulmer, Andy Zhu, Jason Reilly, Rickey Patel
 		IST 412 - Penn State Abington - FA2020
 		Due: 12/2020
 	-->
-
-	<title>MyShuttle</title>
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="UTF-8">
 		
-	<!--Adding a Tab/Main Plane Icon (.ico) for Apple devices & other; must have these files in root directory-->
-	<link rel="" type="" href=""/>
-	<link rel="" sizes="" href="">
-	<link rel="" type="" sizes="" href="">
-	<link rel="" type="" sizes="" href="">
-	<link rel="" type="" sizes="" href="">
-	<link rel="" type="" sizes="" href="">
-	<link rel="" type="" sizes="" href="">
-	
-	<!--Menu Nav Bar & SITE STYLE CSS-->
-	<link href="HomeNavBar.css" rel="stylesheet" type="text/css"/>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="HomeStyle.css" rel="stylesheet" type="text/css"/>
-	<link href="Form.css" rel="stylesheet" type="text/css"/>
-	
-	<!--HomeNavBar JS | Dropdown Menu Bar for smaller screens-->
-	<script type="text/javascript" src="HomeNavBar.js"></script>
-
-	<!--Login Fourm JS | From Nav Bar-->
-	<script>
-		function openForm() {
-			document.getElementById("myForm").style.display="block";
-		}
-
-		function closeForm() {
-			document.getElementById("myForm").style.display="none";
-		}
-	</script>
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+				
+		<!--Adding a Tab/Main Icon (.ico) for Apple devices & other; must have these files in root directory-->
 		
-</head>
-
-
-<header>
+		<!--This tells web that icon or png files are in the root directory of website-->
+		<link rel="manifest" href="/site.webmanifest">
+				
+		
+		<!--Menu Nav Bar & SITE STYLE CSS-->
+		<link href="HomeNavBar.css" rel="stylesheet" type="text/css"/>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="HomeStyle.css" rel="stylesheet" type="text/css"/>
+		<link href="Form.css" rel="stylesheet" type="text/css"/>		
+		
+		<!--HomeNavBar JS | Dropdown Menu Bar for smaller screens-->
+		<script type="text/javascript" src="HomeNavBar.js"></script>
+		
+		<!--Login Fourm JS | From Nav Bar-->
+		<script>
+			function openForm() {
+				document.getElementById("myForm").style.display="block";
+			}
+	
+			function closeForm() {
+				document.getElementById("myForm").style.display="none";
+			}
+		</script>
+	</head>
+	
+	<header>
 		<a href="index.html"><strong><h1> &nbsp;MyShuttle</h1></strong></a>
 	
 	<!--WHEN SCREEN RESIZE, topnav adapts for cleaner look-->
@@ -53,12 +47,11 @@
 		<nav>
 			<!--LoopHome-->
 			<a href="index.html" title="Back To Home" class="active"><i class="fa fa-home" style="font-size:16px"></i> Home</a>
-
+			
 			<a href="requestShuttle.html"><i style="font-size:16px"></i> Request Shuttle</a>
 
 			<a href="fare_history.html"><i style="font-size:16px"></i> Fare History</a>
-
-			
+				
 			<nav class="dropdown">
 				<button class="dropbtn">Contact
 				&#9660;
@@ -78,8 +71,10 @@
 					<a href="INFO_TRAINING.html">Site Info</a>
 					<a href="FAQs.html">FAQs</a>
 					<a href="about.html">About Us</a>
+                    
 				</nav>
 			</nav>	
+			
 
 			<!--Login Page-->
 			<nav class="dropdown">
@@ -119,36 +114,33 @@
 
 			<!--JS function call for hamburger icon menu-->
 			<a href="javascript:void(0);" class="icon" onclick="navBarFunction()">&#9776;</a>
-
 		</nav>
-</header>
-<!--___________________________________________Menu Bar Code Ends Here__________________________________________________________________________-->
-
-<body>	
-	<br></br>
+	</header>
 	
-	<!--Google Map-->
-	<center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3051.2125547998226!2d-75.112814584752!3d40.11526637940125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b055aa880c67%3A0xdddc30c9cdaf01d7!2sPenn%20
-	State%20Abington!5e0!3m2!1sen!2sus!4v1604702523459!5m2!1sen!2sus" width="95%" height="500px" style="position: relative; border-color: black; border-width: 10%;"></iframe></center>
-
-
-	<!--MUST KEEP THESE BREAKS OR FOOTER OVERLAPS.. ONLY ON HOMEPAGE-->
 	
+	
+	<body>
 		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
-</body>
 
+		
+		<h2>MyShuttle</h2>
 
-<footer>
-	<center>
-		While using this site, you agree to have read and accepted our terms of use, cookie and privacy policy.
-		<hr color="#333">
-		Unauthorized use is prohibited. © 2020 Erik Ulmer, Andy Zhu, Jason Reilly, Rickey Patel. All Rights Reserved.
-		<hr color="#333">
-		Powered by HTML | CSS | JavaScript
-	</center>
-</footer>
-</html> 
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br> 
+		
+	</body>
+	
+	
+	<footer>
+		<center>
+			While using this site, you agree to have read and accepted our terms of use, cookie and privacy policy.
+			<hr color="#333">
+			Unauthorized use is prohibited. © 2020 Erik Ulmer, Andy Zhu, Jason Reilly, Rickey Patel. All Rights Reserved.
+			<hr color="#333">
+			Powered by HTML | CSS | JavaScript
+		</center>
+	</footer>
+</html>
